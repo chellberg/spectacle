@@ -15,7 +15,8 @@ const images = {
   logo: require("./formidable-logo.svg"),
   possible: require("./possible.gif"),
   babel: require("./babel.png"),
-  kangax: require("./kangax.png")
+  kangax: require("./kangax.png"),
+  keepcalm: require("./keepcalm.png")
 };
 
 preloader([images.city, images.kat]);
@@ -110,14 +111,146 @@ export default class extends React.Component {
             </Text>
           </Appear>
         </Slide>
-        <Slide>
-
+        <Slide bgColor="black">
+          <BlockQuote>
+            <Quote>ES6 will change the way you write JS code.</Quote>
+            <Cite>Mozilla - ES6 in Depth: An Introduction</Cite>
+          </BlockQuote>
         </Slide>
-        <Slide transition={['zoom', 'fade']} bgColor="primary" notes="<ul><li>talk about that</li><li>and that</li></ul>">
+
+        <Slide transition={['slide']} bgColor="black">
+          <Image src={images.keepcalm.replace('/','')} margin="-80px auto 20px" height="100%" />
+          <Text textSize={40} textColor="tertiary">
+            Photo credit: Miles Sterrett
+          </Text>
+        </Slide>
+
+        <Slide transition={["slide"]}>
+          <Heading fill caps margin="-80px 0 40px 0">
+            fat arrow
+          </Heading>
+            <CodePane
+              lang="javascript"
+              source={require("raw!./fatarrow1.example")} />
+        </Slide>
+
+        <Slide transition={["slide"]}>
+          <Heading fill caps margin="-80px 0 40px 0">
+            fat arrow
+          </Heading>
           <CodePane
             lang="javascript"
-            source={require("raw!./deck.example")}
-            margin="20px auto"/>
+            source={require("raw!./fatarrow2.example")} />
+        </Slide>
+
+        <Slide transition={["slide"]}>
+          <Heading fit caps margin="-80px 0 40px 0">
+            string interpolation (template strings)
+          </Heading>
+          <CodePane
+            lang="javascript"
+            source={require("raw!./strings.example")} />
+        </Slide>
+
+
+        <Slide transition={["slide"]}>
+          <Heading fit caps margin="-80px 0 40px 0">
+            default parameters
+          </Heading>
+          <CodePane
+            lang="javascript"
+            source={require("raw!./defaultparams.example")} />
+        </Slide>
+
+        <Slide transition={["slide"]}>
+          <Heading fit caps margin="-80px 0 40px 0">
+            rest/spread
+          </Heading>
+          <CodePane
+            lang="javascript"
+            source={require("raw!./restspread.example")} />
+        </Slide>
+
+        <Slide transition={["slide"]}>
+          <Heading fit caps margin="-80px 0 40px 0">
+            destructuring assignment
+          </Heading>
+          <CodePane
+            lang="javascript"
+            source={require("raw!./destructuring1.example")} />
+        </Slide>
+
+        <Slide transition={["slide"]}>
+          <Heading fit caps margin="-80px 0 40px 0">
+            destructuring arguments
+          </Heading>
+          <CodePane
+            lang="javascript"
+            source={require("raw!./destructuring2.example")} />
+        </Slide>
+
+        <Slide transition={["slide"]}>
+          <Heading fit caps margin="-80px 0 40px 0">
+            destructuring/pattern matching arrays
+          </Heading>
+          <CodePane
+            lang="javascript"
+            source={require("raw!./destructuring3.example")} />
+        </Slide>
+
+        <Slide transition={["slide"]}>
+          <Heading fit caps margin="-80px 0 40px 0">
+            modules - import/export
+          </Heading>
+          <CodePane
+            lang="javascript"
+            source={require("raw!./module1.example")} />
+          <Text textSize={50}>
+            then...
+          </Text>
+          <CodePane
+            lang="javascript"
+            source={require("raw!./module2.example")} />
+        </Slide>
+
+         <Slide transition={["slide"]}>
+          <Heading fill caps margin="-80px 0 40px 0">
+            classes
+          </Heading>
+          <CodePane
+            lang="javascript"
+            source={require("raw!./classes.example")} />
+        </Slide>
+
+         <Slide transition={["slide"]}>
+          <Heading fill caps margin="-80px 0 40px 0">
+            inheritance
+          </Heading>
+          <CodePane
+            lang="javascript"
+            source={require("raw!./inheritance.example")} />
+        </Slide>
+
+
+        <Slide>
+          <Heading fill caps margin="-80px 0 40px 0">
+            Resources
+          </Heading>
+          <Link href="http://www.getfretless.com/reasons-i-like-js-again-es6/">
+            <Text textSize={60}>
+              http://www.getfretless.com/reasons-i-like-js-again-es6/
+            </Text>
+          </Link>
+          <Link href="https://github.com/lukehoban/es6features">
+            <Text textSize={60}>
+              https://github.com/lukehoban/es6features
+            </Text>
+          </Link>
+          <Link href="https://hacks.mozilla.org/2015/04/es6-in-depth-an-introduction/">
+            <Text fit textSize={60}>
+              https://hacks.mozilla.org/2015/04/es6-in-depth-an-introduction/
+            </Text>
+          </Link>
         </Slide>
 
         <Slide transition={["slide"]} bgImage={images.city.replace("/", "")} bgDarken={0.75}>

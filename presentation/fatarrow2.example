@@ -1,0 +1,31 @@
+// multiple arguments
+
+// ES5
+function(foo, baz) {
+  return foo + baz;
+}
+
+// ES6
+(foo, baz) => { foo + baz }
+
+// returning an object literal
+
+// ES5
+function(foo) {
+  return { baz: 5, biz: foo }
+}
+
+// ES6
+foo => ({ baz: 5, biz: foo })
+
+// anonymous functions
+
+// ES5
+function() {
+  alert('hello');
+}
+
+// ES6
+() => alert('hello')
+
+

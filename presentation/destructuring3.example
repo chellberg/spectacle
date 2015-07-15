@@ -1,0 +1,10 @@
+// list matching
+
+const [one, two, three] = [1, 2, 3]
+// one = 1, two = 2, three = 3
+
+// ignore elements you don't care about
+var [a, , b] = [1,2,3];
+// a = 1, b = 3
+
+

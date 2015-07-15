@@ -1,0 +1,28 @@
+// stickybook.js
+import Book from './book'
+
+class BookWithStickyPages extends Book {
+  constructor(title, author, genre, pages, stickinessMultiplier) {
+    super(title, author, genre, pages)
+    this.stickinessMultiplier = stickinessMultiplier
+  }
+
+  turnPage() {
+    if (this.isOpen) {
+      this.currentPage += stickinessMultiplier
+    } else {
+      console.log('Good luck with that.')
+    }
+  }
+}
+
+const sticky = new BookWithStickyPages('Go Set a Watchman', 'Harper Lee', 'Classics', 288, 3) 
+
+sticky.currentPage  // 1
+sticky.turnPage() // 'Good luck with that.'
+
+sticky.toggleOpen() 
+sticky.turnPage()
+
+sticky.currentPage // 4
+

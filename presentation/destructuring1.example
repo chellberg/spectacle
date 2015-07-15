@@ -1,0 +1,13 @@
+const bach = { id: 5, firstName: 'Johann', lastName: 'Bach', genre: 'Classical' }
+
+// ES5 style assignment
+const id = bach.id
+const genre = bach.genre
+
+// ES6 destructuring assignment
+const { id, genre } = bach
+
+// id = 5, genre = 'Classical'
+
+
+

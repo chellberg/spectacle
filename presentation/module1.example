@@ -1,0 +1,9 @@
+// a file at js/component/widget.js
+
+let widget = {
+ render() {
+   return '<div><h1>Widget</h1></div>'
+ }
+}
+
+export default widget

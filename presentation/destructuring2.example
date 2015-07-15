@@ -1,0 +1,13 @@
+const bach = { id: 5, firstName: 'Johann', lastName: 'Bach', genre: 'Classical' }
+
+// ES6 destructuring function arguments
+
+const getArtistName = ({ firstName, lastName }) => {
+  return `${firstName} ${lastName}`
+}
+
+// without destructuring 
+
+const getArtistName = (artist) => {
+  return `${artist.firstName} ${artist.lastName}`
+}

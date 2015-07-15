@@ -1,0 +1,17 @@
+// ES5
+
+var hello = 'Hello'
+var world = 'World'
+
+var helloWorld = hello + ' ' + world // "Hello World"
+
+// ES6
+
+const helloWorld = `${hello} ${world}` // "Hello World"
+
+// multiline strings
+
+const bach = "Johann Sebastian Bach" 
+const bachBrag = `I, ${bach}, am without a doubt
+                  the greatest composer of all time.`
+

@@ -1,0 +1,7 @@
+const insultMe = (name = 'Bob') => {
+  return `You really suck, ${name}`
+}
+
+insultMe('Corin') // "You really suck, Corin"
+
+insultMe()        // "You really suck, Bob"

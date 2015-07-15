@@ -1,0 +1,22 @@
+// ES5
+function(foo) {
+  return foo + 1;
+}
+
+// ES6
+foo => foo + 1
+
+// don't need return keyword or brackets for single expressions
+
+// no more self = this ridiculousness
+// ES5
+var self = this
+doThatCallbackThang('now', function(whatsit) {
+ self.doAThingOnTheObjectIWasIn()
+}
+
+
+// ES6 
+doThatCallbackThang('now', (whatsit) => {
+ this.doAThingOnTheObjectIWasIn()
+}

@@ -1,0 +1,28 @@
+// book.js
+
+class Book {
+  constructor(title, author, genre, pages) {
+    this.title = title
+    this.author = author
+    this.genre = genre
+    this.pages = pages
+    
+    this.currentPage = 1
+    this.isOpen = false
+  }
+
+  toggleOpen() {
+    this.isOpen = !this.isOpen
+  }
+
+  turnPage() {
+    if (this.isOpen) {
+      this.currentPage++
+    } else {
+      console.log('Good luck with that.')
+    }
+  }
+}
+
+export default Book
+
