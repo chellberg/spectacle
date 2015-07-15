@@ -18,7 +18,7 @@ function(foo) {
 // ES6
 foo => ({ baz: 5, biz: foo })
 
-// anonymous functions
+// no arguments
 
 // ES5
 function() {
