@@ -29,11 +29,11 @@ export default class extends React.Component {
           <Heading size={1} fill caps textColor="black">
             ES6
           </Heading>
-          <Heading size={2} fit caps margin="">
+          <Heading size={2} textColor="tertiary" fit caps margin="0 0 80px 0">
             Tomorrow's Javascript, today.
           </Heading>
           <Appear>
-            <Text fit textSize={1} caps textColor="tertiary">shamelessly stolen from babel</Text>
+            <Text fit textSize="15" caps textColor="black">title shamelessly stolen from basically every ES6 post ever</Text>
           </Appear>
         </Slide>
         <Slide>
