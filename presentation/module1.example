@@ -1,4 +1,4 @@
-// a file at js/component/widget.js
+// a file at js//widget.js
 
 let widget = {
  render() {
