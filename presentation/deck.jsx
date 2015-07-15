@@ -255,18 +255,23 @@ export default class extends React.Component {
             Resources
           </Heading>
           <Link href="http://www.getfretless.com/reasons-i-like-js-again-es6/">
-            <Text textSize={60}>
+            <Text textSize={40}>
               http://www.getfretless.com/reasons-i-like-js-again-es6/
             </Text>
           </Link>
           <Link href="https://github.com/lukehoban/es6features">
-            <Text textSize={60}>
+            <Text textSize={40}>
               https://github.com/lukehoban/es6features
             </Text>
           </Link>
           <Link href="https://hacks.mozilla.org/2015/04/es6-in-depth-an-introduction/">
-            <Text fit textSize={60}>
+            <Text textSize={40}>
               https://hacks.mozilla.org/2015/04/es6-in-depth-an-introduction/
+            </Text>
+          </Link>
+          <Link href="http://www.es6fiddle.net/">
+            <Text textSize={40}>
+              http://www.es6fiddle.net/
             </Text>
           </Link>
         </Slide>
