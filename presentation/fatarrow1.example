@@ -8,7 +8,8 @@ foo => foo + 1
 
 // don't need return keyword or brackets for single expressions
 
-// no more self = this ridiculousness
+// lexical this
+
 // ES5
 var self = this
 doThatCallbackThang('now', function(whatsit) {
